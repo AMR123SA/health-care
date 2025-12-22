@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Emergency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+   
+    <link rel="icon" href="assets/imgs/hero logo.png" sizes="250x250" type="image/png" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="me-navbar">
+      <div class="me-nav-container">
+        <div class="me-nav-logo">
+          <a href="#Home">
+            <img src="assets/imgs/health care logo.jpg" alt="Medical Emergency Logo">
+           Health care
+          </a>
+        </div>
+
+        <div class="me-nav-toggle" id="nav-toggle">☰</div>
+
+        <ul class="me-nav-links" id="nav-links">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Team">Team</a></li>
+          <li><a href="#Services"> Services</a></li>
+          <li><a href="Login.html">Login</a></li>
+          <li><a href="#Language"><i class="fas fa-language"></i> Language <i class="fas fa-chevron-down"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <script>
+      const toggle = document.getElementById("nav-toggle");
+      const links = document.getElementById("nav-links");
+      toggle.addEventListener("click", () => {
+        links.classList.toggle("active");
+      });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="hero" id="Home">
+      <img class="hero-background-img" src="assets/imgs/section hero 3.jpg" alt="Hero Image"/>
+      <div class="hero-content">
+        <h1 class="hero-title">Welcome to Medical Emergency</h1>
+        <p class="hero-subtitle">
+          Your health is our priority. Get immediate assistance in case of emergencies.
+        </p>
+        <div class="hero-buttons">
+          <a href="#Services" class="me-btn me-btn-primary">Our Services</a>
+          <a href="#Contact" class="me-btn me-btn-secondary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="me-section about-section" id="About">
+      
+      <div class="me-section-header">
+        <h1 class="me-section-title">About Us</h1>
+        <p class="me-section-subtitle">
+          Providing swift and reliable emergency medical services.
+        </p>
+      </div>
+
+      <div class="me-section-content">
+        <div class="me-section-text">
+          <p>
+            At Medical Emergency, we are more than just an emergency medical service; we are your partner in the toughest moments. Our team of experts is always ready to provide fast and effective care, no matter the situation, ensuring your safety and peace of mind.
+          </p>
+          <p>
+            Speed is our priority, Compassion is our foundation, Professionalism is our standard. We are here to be the first line of defense for your health — whenever and wherever you need us.
+          </p>
+
+          <div class="me-cards-container">
+            <div class="me-card">
+              <h2 class="card-title">Our Vision</h2>
+              <p class="card-text">To be the leading provider of emergency medical care in the region.</p>
+            </div>
+
+            <div class="me-card">
+              <h2 class="card-title">Our Mission</h2>
+              <p class="card-text">Delivering fast, reliable, and compassionate medical assistance whenever it is needed.</p>
+            </div>
+
+            <div class="me-card">
+              <h2 class="card-title">Our Values</h2>
+              <ul class="card-text">
+                <li>Trust</li>
+                <li>Speed</li>
+                <li>Compassion</li>
+                <li>Professionalism</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="me-team-section">
+  <div class="me-team-image-container">
+  <img src="assets/imgs/our medical team .jpg" alt="Medical Team" class="me-team-background-img">
+  </div>
+  <div class="me-team-text">
+    <h2 class="me-team-img-header">Why You Can Trust Us</h2>
+    <p class="me-team-img-p">
+      Because we have a team of seasoned medical professionals, combining expertise with compassion.<br>
+      Available 24/7, always ready to answer your questions and provide the support you need.
+    </p>
+  </div>
+</section>
+
+
+    <!-- Team Section -->
+    <section class="me-section team-section" id="Team">
+      <div class="me-section-header">
+        <h1 class="me-section-title">Our Medical Team</h1>
+        <p class="me-section-subtitle">Meet the professionals dedicated to your health and safety.</p>
+      </div>
+
+      <div class="me-cards-container">
+        <div class="me-team-cards">
+          <div class="me-team-card">
+            <img src="assets/imgs/ahmed.jpg" alt="Dr. Ahmed - Emergency Specialist" class="me-team-img"/>
+            <h3 class="me-team-name">Dr. Ahmed</h3>
+            <p class="me-team-role">Emergency Specialist</p>
+            <p class="me-team-bio">Over 10 years of experience in critical care and emergency response.</p>
+          </div>
+
+          <div class="me-team-card">
+            <img src="assets/imgs/sara.jpg" alt="Dr. Sara - Trauma Surgeon" class="me-team-img"/>
+            <h3 class="me-team-name">Dr. Sara</h3>
+            <p class="me-team-role">Trauma Surgeon</p>
+            <p class="me-team-bio">Expert in trauma surgery and rapid intervention in life-threatening cases.</p>
+          </div>
+
+          <div class="me-team-card">
+            <img src="assets/imgs/omar.jpg" alt="Dr. Omar - Paramedic Lead" class="me-team-img"/>
+            <h3 class="me-team-name">Dr. Omar</h3>
+            <p class="me-team-role">Paramedic Lead</p>
+            <p class="me-team-bio">Leading paramedic teams to deliver fast and reliable on-site medical care.</p>
+          </div>
+
+          <div class="me-team-card">
+            <img src="assets/imgs/Layla.jpg" alt="Dr. Layla - Pediatrician" class="me-team-img"/>
+            <h3 class="me-team-name">Dr. Layla</h3>
+            <p class="me-team-role">Pediatrician</p>
+            <p class="me-team-bio">Specialized in child healthcare, ensuring young patients receive compassionate and effective treatment.</p>
+          </div>
+
+          <div class="me-team-card">
+            <img src="assets/imgs/Karim.jpg" alt="Dr. Karim - Cardiologist" class="me-team-img"/>
+            <h3 class="me-team-name">Dr. Karim</h3>
+            <p class="me-team-role">Cardiologist</p>
+            <p class="me-team-bio">Expert in heart and vascular emergencies, providing life-saving interventions during critical conditions.</p>
+          </div>
+
+          <div class="me-team-card">
+            <img src="assets/imgs/Mona.jpg" alt="Dr. Mona - Anesthesiologist" class="me-team-img"/>
+            <h3 class="me-team-name">Dr. Mona</h3>
+            <p class="me-team-role">Anesthesiologist</p>
+            <p class="me-team-bio">Experienced in anesthesia and pain management, ensuring patient safety during surgeries and emergency procedures.</p>
+          </div>
+        </div>
+      </div>
+
+     <div class="more">
+  <button class="more-btn">Meet More Team Members</button>
+</div>
+       <div class="start-chat">
+    <h2 class="took-doctor">Get a trusted medical consultation from a doctor</h2>
+    <button class="talk-btn">Talk Now</button>
+    </div>
+
+    </section>
+   
+    
+
+    <!-- Services Section -->
+    <section class="me-section services-section" id="Services">
+      <div class="me-section-header">
+        <h1 class="me-section-title">Our Medical Services</h1>
+        <p class="me-section-subtitle">Comprehensive healthcare services provided by our professional team.</p>
+      </div>
+      
+      <!-- First Part: Core Services -->
+  <div class="me-services-cards-container-core-services">
+    <!-- Card 1: Telemedicine -->
+    <div class="me-card">
+      <i class="fa-solid fa-stethoscope card-icon"></i>
+
+      <h2 class="card-title">Telemedical Consultations</h2>
+      <p class="card-text">Remote consultations with our specialized doctors.</p>
+    </div>
+
+    <!-- Card 2: Chronic Condition Management -->
+    <div class="me-card">
+     <i class="fa-solid fa-heart-pulse card-icon"></i>
+      <h2 class="card-title">Chronic Condition Management</h2>
+      <p class="card-text">Monitoring and follow-up for chronic diseases.</p>
+    </div>
+
+    <!-- Card 3: Family Medicine -->
+    <div class="me-card">
+      <i class="fa-solid fa-people-group card-icon"></i>
+      <h2 class="card-title">Family Medicine</h2>
+      <p class="card-text">Comprehensive care for all family members.</p>
+    </div>
+
+    <!-- Card 4: Psychological Support -->
+    <div class="me-card">
+      <i class="fa-solid fa-brain card-icon"></i>
+      <h2 class="card-title">Psychological Support</h2>
+      <p class="card-text">Enhancing mental health and wellbeing.</p>
+    </div>
+
+    <!-- Card 5: Emergency Services -->
+    
+    <div class="me-card" >
+     <i class="fas fa-map-marker-alt card-icon"></i>
+      <h2 class="card-title">Location Tracking</h2>
+      <p class="card-text">Service to identify nearby hospitals and clinics for faster response.</p>
+    </div>
+
+    <!-- Card 6: Subscription Plans -->
+    <div class="me-card">
+      <i class="fas fa-lock card-icon"></i>
+      <h2 class="card-title">Data Security</h2>
+      <p class="card-text">Secure storage and protection of patient information using advanced technology.</p>
+    </div>
+    </div>
+
+    </section>
+    
+    <section class="Medical-Articles-section ">
+      <div class="me-section-header">
+        <h2 class="me-section-title">Medical Articles</h2>
+        <p class="me-section-subtitle">Informative articles on various medical emergencies and first aid techniques.</p>
+      </div>
+      <div class="me-articles-cards-container">
+        <button onclick="window.location.href='Emergency Services.html'" class="me-btn">
+          go to Articles
+        </button>
+      </div>
+    </section>
+
+    <section class="stats-section">
+  <div class="container">
+    <h2 class="stats-title">Our Journey in Numbers</h2>
+    <p class="stats-info">
+      The most prominent achievements and figures that reflect our continuous efforts in providing distinguished and reliable healthcare services
+    </p>
+    <div class="stats-cards-scroll">
+      <div class="stats-card">
+        <img class="stats-icon" src="assets/imgs/download.svg" alt="download app">
+        <span class="stats-number">3M+</span>
+        <p class="stats-text">App Downloads</p>
+      </div>
+      <div class="stats-card">
+        <img class="stats-icon" src="assets/imgs/tbi-profile-person.svg" alt="doctor icon">
+        <span class="stats-number">3M+</span>
+        <p class="stats-text">Medical Consultations</p>
+      </div>
+      <div class="stats-card">
+        <img class="stats-icon" src="assets/imgs/Medical Recommendations.svg" alt="question icon">
+        <span class="stats-number">1.5M+</span>
+        <p class="stats-text">Medical Recommendations</p>
+      </div>
+      <div class="stats-card">
+        <img class="stats-icon" src="assets/imgs/users.svg" alt="person icon">
+        <span class="stats-number">192M+</span>
+        <p class="stats-text">Annual Users</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <section class="plan">
+      <div class="wave-shape">
+  <svg viewBox="0 0 500 50" preserveAspectRatio="none">
+    <path d="M0,30 C150,60 350,0 500,30 L500,00 L0,0 Z" style="fill:white;"></path>
+  </svg>
+</div>
+<h2 class="section-title">Start Your Health Journey Today</h2>
+
+ 
+
+    <!-- From Uiverse.io by Yaya12085 --> 
+<form class="plan-chooser">
+  <div class="header">
+  <span class="title">Choose your plan</span>
+  <p class="desc">Amet minim mollit non deserunt ullamco est sit .</p>
+  </div>
+  <div class="plan-option">
+      <input value="free" id="free" name="plan" type="radio">
+    <label for="free">
+      <div class="plan-info">
+      <span class="plan-cost">$0</span>
+      <span class="plan-name">Try Free</span>
+      </div>
+    </label>
+  </div>
+  <div class="plan-option">
+      <input value="monthly" id="monthly" name="plan" type="radio">
+    <label for="monthly">
+      <div class="plan-info">
+      <span class="plan-cost">$29/month</span>
+      <span class="plan-name">Monthly plan</span>
+      </div>
+    </label>
+  </div>
+  <div class="plan-option">
+      <input value="annual" id="annual" name="plan" type="radio">
+    <label for="annual">
+       <div class="plan-info">
+      <span class="plan-cost">$19/month</span>
+      <span class="plan-name">$228 billed in a year</span>
+      </div>
+      <span class="reduction"> Save 20% </span>
+    </label>
+  </div>
+            <a href="#" title="" class="choose-btn"> Start </a>
+
+</form>
+
+
+
+<div class="info-card promo">
+  <h3>Take care of your health and your family's well-being</h3>
+  <p>
+    Subscribe now...<br><br>
+    At Altibbi, we offer subscription plans tailored to all users,<br>
+    providing unlimited medical consultations answered within minutes by certified doctors.<br><br>
+    All doctors are licensed by the Saudi Ministry of Health.
+  </p>
+</div>
+
+<div class="wave-shape">
+  <svg viewBox="0 0 500 50" preserveAspectRatio="none">
+    <path d="M0,30 C150,60 350,0 500,30 L500,00 L0,0 Z" style="fill:white;"></path>
+  </svg>
+</div>
+    
+ </section>
+
+ <section class="Awards-and-Certifications-section">
+ <div class="Awards-and-Certifications"></div>
+ <h1 class="Awards and Certifications-title">Awards and Certifications</h1>
+ <p class="Awards and Certifications-subtitle">"Your trust is our priority, and we are proud to have received recognition from prestigious global and local institutions."</p>
+ <div class="Awards-and-Certifications-logos">
+  <img src="assets/imgs/Awards and Certifications 1.jpg" alt="Award 1" class="award-logo">
+  <img src="assets/imgs/Awards and Certifications 2.webp" alt="Award 2" class="award-logo">
+  <img src="assets/imgs/Awards and Certifications 3.webp" alt="Award 3" class="award-logo">
+  <img src="assets/imgs/Awards and Certifications 4.png" alt="Award 4" class="award-logo">
+  </div>
+ </section>
+
+   <footer>
+        <div class="me-container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email:Info@example.com</p>
+                <p>Phone:+121 56556 565556</p>
+                <p>Address:Your Address 123 street</p>
+            </div>
+            <div class="footer-content">
+  <h3>Quick Links</h3>
+  <ul class="list">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#login">Login</a></li>
+  </ul>
+</div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                 <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                 <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 your company . All rights reserved</p>
+        </div>
+    </footer>
+ 
+
+
+
+   
+
+       
+    </section>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCaeIEpu1d0EAbjzF0zj1JoozquN0aVXGQ",
+    authDomain: "medical-emergency-fd3d8.firebaseapp.com",
+    projectId: "medical-emergency-fd3d8",
+    storageBucket: "medical-emergency-fd3d8.firebasestorage.app",
+    messagingSenderId: "563250928690",
+    appId: "1:563250928690:web:4fb37c7bf9bd85f707f02b",
+    measurementId: "G-WVDFP8X6N9"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+    
+  </body>
+</html>

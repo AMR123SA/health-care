@@ -1,0 +1,98 @@
+
+body{
+  background-color:  rgba(0, 51, 102, 0.9);
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Emergency Services Section */
+.me-emergency-services-intro {
+  height: 100%;
+ 
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* Divider (العنوان والوصف) */
+.me-emergency-services-intro .me-section-divider {
+  padding: 1.5rem;
+  margin: auto;
+}
+
+.me-emergency-services-intro .me-title-of-part2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: clamp(2rem, 4vw, 4rem);
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right, #ffffff, #00bfff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.me-emergency-services-intro .me-subtitle-of-part2 {
+  color: #ffffff;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Cards Container */
+.me-emergency-services-intro .me-services-cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+/* Responsive Grid */
+@media (max-width: 1200px) {
+  .me-emergency-services-intro .me-services-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .me-emergency-services-intro .me-services-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Card Style */
+.me-emergency-services-intro .me-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.me-emergency-services-intro .me-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Card Image */
+.me-emergency-services-intro .card-img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Card Title */
+.me-emergency-services-intro .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right, #ffffff, #00bfff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Card Text */
+.me-emergency-services-intro .card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e8e8e8;
+}

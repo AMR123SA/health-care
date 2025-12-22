@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+</head>
+<body>
+  <h2>Sign Up</h2>
+  <input type="email" id="newEmail" placeholder="Email">
+  <input type="password" id="newPassword" placeholder="Password">
+  <button onclick="signup()">Sign Up</button>
+
+  <p>Already have an account? <a href="login.html">Login</a></p>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
+
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCaeIEpu1d0EAbjzF0zj1JoozquN0aVXGQ",
+  authDomain: "medical-emergency-fd3d8.firebaseapp.com",
+  projectId: "medical-emergency-fd3d8",
+  storageBucket: "medical-emergency-fd3d8.firebasestorage.app",
+  messagingSenderId: "563250928690",
+  appId: "1:563250928690:web:4fb37c7bf9bd85f707f02b",
+  measurementId: "G-WVDFP8X6N9"
+};
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    window.signup = function() {
+      const email = document.getElementById("newEmail").value;
+      const password = document.getElementById("newPassword").value;
+
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          alert("Account created: " + userCredential.user.email);
+          window.location.href = "dashboard.html";
+        })
+        .catch((error) => {
+          alert("Error: " + error.message);
+        });
+    }
+  </script>
+</body>
+</html>
