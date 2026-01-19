@@ -985,12 +985,16 @@ body {
       text-decoration: underline;
     } 
     .signup-container { 
-      background: #f9f9f9;
+     background: #f9f9f9;
       padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-      width: 350px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15); width: 100vw;
+      height: 100vh; 
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     } 
     .signup-container h2 { 
       margin-bottom: 25px;
@@ -1035,3 +1039,4 @@ body {
     .signup-container a:hover { 
       text-decoration: underline; 
     }
+
