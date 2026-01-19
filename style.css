@@ -934,7 +934,7 @@ body {
         padding: 7px;
 
     }
-    .login-container {
+    .login-container{
       width: 100%;
       padding: 12px; 
       background: #28a745;
@@ -1043,5 +1043,6 @@ body {
     .signup-container a:hover { 
       text-decoration: underline; 
     }
+
 
 
