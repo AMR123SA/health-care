@@ -935,15 +935,17 @@ body {
 
     }
     .login-container{
-      width: 100%;
-      padding: 12px; 
-      background: #28a745;
-      border: none;
-      border-radius: 8px;
-      color: #fff; 
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s;
+     background: #f9f9f9;
+      padding: 40px;
+      border-radius: 12px; 
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      width: 100vw;
+      height: 100vh; 
+      text-align: center;
+      display: flex; 
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     } 
     .login-container h2 {
       margin-bottom: 25px;
@@ -1043,6 +1045,7 @@ body {
     .signup-container a:hover { 
       text-decoration: underline; 
     }
+
 
 
 
