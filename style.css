@@ -934,18 +934,18 @@ body {
         padding: 7px;
 
     }
-    .login-container {
+    .login-container, .signup-container {
         background: #fff; 
         padding: 30px; 
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         width: 300px; text-align: center;
       } 
-      .login-container h2 {
+      .login-container, .signup-container h2 {
       margin-bottom: 20px;
         color: #2c3e50;
       } 
-      .login-container input { 
+      .login-container, .signup-container input { 
         width: 100%; 
         padding: 10px;
         margin: 10px 0;
@@ -954,10 +954,10 @@ body {
         outline: none; 
         transition: border-color 0.3s;
       } 
-      .login-container input:focus {
+      .login-container, .signup-container input:focus {
         border-color: #74ebd5;
       } 
-      .login-container button { 
+      .login-container, .signup-container button { 
         width: 100%; padding: 10px;
         background: #74ebd5; 
         border: none; 
@@ -967,19 +967,20 @@ body {
         cursor: pointer; 
         transition: background 0.3s; 
       } 
-      .login-container button:hover {
+      .login-container, .signup-container button:hover {
         background: #4bb3a7; 
       } 
-      .login-container p {
+      .login-container, .signup-container p {
         margin-top: 15px;
         font-size: 14px;
       }
-      .login-container a { 
+      .login-container, .signup-container a { 
         color: #74ebd5; 
         text-decoration: none;
       }
-      .login-container a:hover { 
+      .login-container, .signup-container a:hover { 
         text-decoration: underline; 
       }
     
+
 
