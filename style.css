@@ -410,7 +410,8 @@ body {
 
 .more-btn:hover {
   background-color: #0056b3;   
-  transform: scale(1.05);      
+  transform: scale(1.05);
+}
 
 .start-chat {
   background: linear-gradient(135deg, #007BFF, #3399FF); 
@@ -1043,6 +1044,7 @@ body {
     .signup-container a:hover { 
       text-decoration: underline; 
     }
+
 
 
 
