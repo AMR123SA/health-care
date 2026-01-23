@@ -50,9 +50,9 @@ body {
 }
 .me-nav-links {
   list-style: none;
-  display: flex;           /* يخلي العناصر جنب بعض */
-  flex-direction: row;     /* الاتجاه أفقي */
-  gap: 1rem;               /* مسافة بين العناصر */
+  display: flex;           
+  flex-direction: row;    
+  gap: 1rem;              
   margin: 0;
   padding: 0;
 }
@@ -90,7 +90,7 @@ body {
   }
 }
 
-/* Hero Section */
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -220,10 +220,10 @@ body {
   background-color: rgba(0, 51, 102, 0.9);
   gap: 3rem;
   flex-wrap: wrap;
-  overflow: hidden; /* يخلي الصورة تندمج جوه الحواف */
+  overflow: hidden;
 }
 
-/* الصورة */
+
 .me-team-image-container {
   position:relative;
   flex: 1;
@@ -249,7 +249,7 @@ body {
 }
 
 
-/* النص */
+
 .me-team-text {
   flex: 1;
   min-width: 300px;
@@ -274,7 +274,7 @@ body {
 
 
 
-/* Cards */
+
 .me-card {
   flex: 1;
   background-color: rgba(255, 255, 255, 0.05);
@@ -326,7 +326,7 @@ body {
   }
 }
 
-/* Team Section */
+
 .me-team-section {
   background-color: rgba(0, 51, 102, 0.9);
   backdrop-filter: blur(8px);
@@ -397,8 +397,8 @@ body {
 }
 
 .more-btn {
-  background-color: #007BFF;   /* لون أزرق */
-  color: #fff;                 /* خط أبيض */
+  background-color: #007BFF;   
+  color: #fff;                 
   border: none;
   padding: 12px 30px;
   border-radius: 6px;
@@ -451,12 +451,12 @@ body {
 
 
 
-/* Services Grid */
+
 
 
 .me-services-cards-container-core-services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 بطاقات في كل صف */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 2rem;
   padding: 0.5rem;
 }
@@ -466,20 +466,20 @@ body {
 
 .me-services-cards-container { 
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 بطاقات في كل صف */
+  grid-template-columns: repeat(5, 1fr); 
   gap: 2rem; 
   padding: 0.5rem;
 }
 
-/* استجابة للشاشات */
+
 @media (max-width: 1200px) {
   .me-services-cards-container {
-    grid-template-columns: repeat(3, 1fr); /* 3 بطاقات في كل صف على الشاشات المتوسطة */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 @media (max-width: 768px) {
   .me-services-cards-container {
-    grid-template-columns: repeat(1, 1fr); /* بطاقة واحدة في كل صف على الشاشات الصغيرة */
+    grid-template-columns: repeat(1, 1fr); 
   }
 }
 
@@ -519,7 +519,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* From Uiverse.io by Yaya12085 */ 
+
 .plan-chooser {
   background-color: rgba(255, 255, 255, 1);
   max-width: 450px;
@@ -547,7 +547,7 @@ body {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 40px;
-  color: #007BFF; /* لون أزرق مميز */
+  color: #007BFF; 
   font-family: 'Cairo', sans-serif;
   max-width: 300px;
 }
@@ -695,8 +695,8 @@ body {
 .me-btn {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #007BFF;   /* الأزرق الأساسي */
-  color: #fff;                 /* خط أبيض */
+  background-color: #007BFF;   
+  color: #fff;                 
   border: none;
   border-radius: 6px;
   font-size: 1rem;
@@ -708,15 +708,14 @@ body {
 }
 
 .me-btn:hover {
-  background-color: #0056b3;   /* الأزرق الغامق عند الـ hover */
-  transform: scale(1.05);      /* يكبر شوية عند المرور عليه */
+  background-color: #0056b3;  
+  transform: scale(1.05);      
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 .me-btn:active {
-  background-color: #004080;   /* لون أغمق عند الضغط */
-  transform: scale(0.98);      /* يصغر شوية عند الضغط */
-}
+  background-color: #004080;   
+  transform: scale(0.98);     
 
 .stats-section {
   background-color: #003366e6;
@@ -787,9 +786,9 @@ body {
   font-size: 1rem;
   color: #f0f0f0;
 }
-/* Awards and Certifications Section */
+
 .Awards-and-Certifications-section {
-  background-color:rgb(251, 244, 244);; /* خلفية داكنة */
+  background-color:rgb(251, 244, 244);;
   backdrop-filter: blur(6px);
   padding: 4rem 2rem;
   text-align: center;
@@ -833,7 +832,7 @@ body {
 
 
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .Awards-and-Certifications-title {
     font-size: 2rem;
@@ -1045,6 +1044,7 @@ body {
     .signup-container a:hover { 
       text-decoration: underline; 
     }
+
 
 
 
