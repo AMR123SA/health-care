@@ -4,7 +4,7 @@ body{
   color: #e0e0e0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/* Emergency Services Section */
+
 .me-emergency-services-intro {
   height: 100%;
  
@@ -12,7 +12,7 @@ body{
   text-align: center;
 }
 
-/* Divider (العنوان والوصف) */
+
 .me-emergency-services-intro .me-section-divider {
   padding: 1.5rem;
   margin: auto;
@@ -35,7 +35,7 @@ body{
   margin-bottom: 1rem;
 }
 
-/* Cards Container */
+
 .me-emergency-services-intro .me-services-cards-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -43,7 +43,7 @@ body{
   padding: 0.5rem;
 }
 
-/* Responsive Grid */
+
 @media (max-width: 1200px) {
   .me-emergency-services-intro .me-services-cards-container {
     grid-template-columns: repeat(3, 1fr);
@@ -55,7 +55,7 @@ body{
   }
 }
 
-/* Card Style */
+
 .me-emergency-services-intro .me-card {
   background-color: rgba(255, 255, 255, 0.05);
   color: #f0f0f0;
@@ -71,7 +71,7 @@ body{
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
 
-/* Card Image */
+
 .me-emergency-services-intro .card-img {
   height: 150px;
   width: 100%;
@@ -80,7 +80,7 @@ body{
   margin-bottom: 1rem;
 }
 
-/* Card Title */
+
 .me-emergency-services-intro .card-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -90,9 +90,10 @@ body{
   -webkit-text-fill-color: transparent;
 }
 
-/* Card Text */
+
 .me-emergency-services-intro .card-text {
   font-size: 1rem;
   line-height: 1.6;
   color: #e8e8e8;
 }
+
