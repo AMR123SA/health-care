@@ -202,7 +202,7 @@ body {
   background: linear-gradient(to right, #ffffff, #00bfff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 2
+  line-height: 2;
 }
 .me-section-subtitle {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
@@ -715,7 +715,9 @@ body {
 
 .me-btn:active {
   background-color: #004080;   
-  transform: scale(0.98);     
+  transform: scale(0.98);  
+}
+  
 
 .stats-section {
   background-color: #003366e6;
@@ -857,7 +859,7 @@ body {
     }
     .footer-content{
         width: 33.3%;
-        color:rgb(251, 244, 244)
+        color:rgb(251, 244, 244);
     }
     h3{
         font-size: 28px;
@@ -1044,6 +1046,7 @@ body {
     .signup-container a:hover { 
       text-decoration: underline; 
     }
+
 
 
 
