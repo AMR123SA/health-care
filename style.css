@@ -13,7 +13,7 @@ body {
   background-color: rgb(251, 244, 244);
 }
 
-/* Navbar */
+
 .me-navbar {
   background-color: rgba(0, 51, 102, 0.9);
   backdrop-filter: blur(8px);
@@ -180,7 +180,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Sections */
+
 .me-section {
   background-color: rgba(0, 51, 102, 0.9);
   backdrop-filter: blur(8px);
@@ -409,12 +409,11 @@ body {
 }
 
 .more-btn:hover {
-  background-color: #0056b3;   /* لون أزرق غامق عند الـ hover */
-  transform: scale(1.05);      /* يكبر شوية عند المرور عليه */
-}
+  background-color: #0056b3;   
+  transform: scale(1.05);      
 
 .start-chat {
-  background: linear-gradient(135deg, #007BFF, #3399FF); /* خلفية زرقاء متدرجة */
+  background: linear-gradient(135deg, #007BFF, #3399FF); 
   color: white;
   border-radius: 12px;
   padding: 40px 20px;
@@ -1044,6 +1043,7 @@ body {
     .signup-container a:hover { 
       text-decoration: underline; 
     }
+
 
 
 
